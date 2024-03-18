@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style_contacto.css">
+    <title>Contacto</title>
+    
+</head>
+<body>
+
+<header>
+    <h1>Contactame</h1>
+    <nav>
+        <ul>
+            <li><a href="portafolio.html">Inicio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="about_me.html">Sobre mi</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="contact">
+        <h2>Información de Contacto</h2>
+        <ul>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/harold-medrano" target="_blank">Harold Medrano Emiliani</a></li>
+          <li>GitHub: <a href="https://github.com/hmemiliani" target="_blank">haroldmedranoe</a></li>
+          <li>Email: <a href="mailto:harold_medranoe@hotmail.com">harold_medranoe@hotmail.com</a></li>
+          <li>Teléfono: <a href="">304-XXX-XXX8</a></li>
+        </ul>
+    </section>
+
+    <form>
+        <h3>Contactame</h3>
+        <figure>
+          <label for="nombre">*Nombre:</label>
+          <input type="text" id="nombre" name="nombre"  maxlength="50" required>
+        </figure>
+        <figure>
+          <label for="email">*Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required>
+        </figure>
+        <figure>
+          <label for="asunto">*Asunto:</label>
+          <select id="asunto" name="asunto" required>
+            <option value="" disabled selected>--Seleccione--</option>
+            <option value="consulta">Consulta</option>
+            <option value="solicitud">Solicitud</option>
+            <option value="comentario">Comentario</option>
+          </select>
+        </figure>
+        <figure>
+          <label for="mensaje">*Mensaje:</label><br>
+          <textarea id="mensaje" name="mensaje" required maxlength="500" cols="30" rows="10"></textarea>
+        </figure>
+        <figure>
+          <input type="checkbox" id="terminos_condiciones" name="terminos_condiciones" required>
+          <label for="terminos_condiciones">*Aceptar términos y condiciones</label>
+        </figure>
+        <figure>
+          <input type="submit" value="Enviar">
+        </figure>
+      </form>
+      
+</main>
+
+<footer>
+    <p>&copy; 2024 Harold Medrano Emiliani. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

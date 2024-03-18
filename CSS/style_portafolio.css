@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Kay+Pho+Du:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;1,400;1,500&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* Estilos para el cuerpo */
+body {
+    font-family: "Kay Pho Du", serif;
+    font-style: normal;
+    font-size: 20px;
+    /* display: flex;
+    flex-direction: column; */
+    margin: 0;
+    background-color: rgb(248, 248, 248);
+}
+
+/* Estilos para header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 36px;
+}
+
+/* El nav */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    /*para que sea horizontal */
+    margin-right: 20px;
+    /*espaciado entre palabras*/
+}
+
+nav ul li a {
+    color: #fff;
+    /*color de opcion de nav */
+    text-decoration: none;
+    /*le quita la linea de abajo de los vinculos */
+}
+
+nav ul li:hover {
+    background-color: #444343;
+}
+
+/* El main */
+main {
+    background-color: rgb(255, 255, 255);
+    margin: 20px auto;
+    /* Centro el main */
+    padding: 20px;
+    /* espaciado interno */
+    width: 80%;
+    /* Ancho del main */
+    border-radius: 10px;
+    /*bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /*sombra del contenedor*/
+}
+
+/*frase de introduccion */
+.intro {
+    margin-bottom: 20px;
+}
+
+/*portafolio */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid de 3 columnas */
+    grid-auto-rows: auto;
+    /* Altura */
+    grid-gap: 20px;
+    justify-items: center;
+    /*centrar los items horizontalmente */
+}
+
+/*proyectos */
+.project {
+    background-color: #f8f8f8;
+    /*fondo de cada proyecto */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    /* Sombrita*/
+    display: flex;
+    /*flexbox para centrar contenido verticalmente no se me ocurrio otra forma */
+    flex-direction: column;
+    /*alinear contenido en columna */
+    align-items: center;
+    /*centrado vertical */
+    text-align: center;
+    /*centrado horizontal */
+}
+
+.project img {
+    /* imagenes de los proyectos */
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    /*pego el footer al findo */
+}

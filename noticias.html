@@ -1,0 +1,345 @@
+<!-- 
+    Parte 2: Crear un Portal de Noticias
+
+Objetivo
+- Desarrollar un portal de noticias que presente varias noticias de manera detallada. Cada noticia deberá contar con un titular destacado, la fecha de publicación, el nombre del autor o autores, y un cuerpo extenso que incluya varios párrafos e imágenes.
+
+
+Criterios de Aceptación
+
+- Encabezado Principal del Portal:
+	* La página debe comenzar con un elemento que sirva de encabezado, conteniendo el nombre del portal de noticias. Este elemento debe ser lo suficientemente prominente como para captar la atención de los visitantes de inmediato.
+
+- Listado de Noticias:
+	* Inmediatamente después del encabezado principal, se deben crear 6 noticias. Cada noticia debe ser fácilmente distinguible de las otras.
+
+- Estructura de Cada Noticia:
+	* Título de la Noticia: Cada noticia debe comenzar con un título claro y destacado, que capte el interés del lector.
+	* Fecha de Publicación y Autor: Justo debajo del título, se debe incluir la fecha en que la noticia fue publicada, junto con el nombre del autor o autores. Esta información debe estar claramente separada del título para evitar confusiones.
+	* Cuerpo de la Noticia: El contenido principal de cada noticia debe estar bien organizado, incluyendo al menos 6 párrafos. Los párrafos deben estructurarse de manera que la narrativa sea fácil de seguir. Si se desea incluir imágenes, deben estar integradas de forma que complementen el texto, sin interrumpir la fluidez de la lectura.
+
+Notas Adicionales:
+	* Consideren cómo pueden utilizar las etiquetas básicas de HTML para diferenciar entre los distintos tipos de contenido (por ejemplo, títulos, párrafos, fechas).
+	* Piensen en la importancia de la estructura y la organización para facilitar la lectura y la navegación dentro del portal.
+	* Aunque no se utilicen etiquetas semánticas específicas, es fundamental crear una página que sea intuitiva y accesible para los usuarios.
+
+- Al menos dos noticias deben tratar sobre dos de los siguientes temas:
+	- Habilidades blandas en el mundo laboral de la programacion web.
+	- Las 3 etapas de la inteligencia artificial.
+	- Que es inteligencia artificial generativa?
+ -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style_blog.css">
+    <title>Portal de Noticias Medrem</title>
+    
+</head>
+
+<body>
+    <header>
+        <h1>Portal de Noticias Tech Medrem</h1>
+        <!-- Este es mi coso de noticias atte. HaroldM-->
+        <nav>
+            <ul>
+                <li><a href="portafolio.html">Inicio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="about_me.html">Sobre mi</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            
+            <table id="tab" border="1px" width="100%"> <!-- Tabla de contenido -->
+                <caption>
+                    <h2>Tabla de contenido</h2>
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Titulo</th>
+                        <th>Autor</th>
+                        <th>Fecha</th>
+                        <th>Calificacion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#a1">Inteligencia Artificial Generativa, reto y oportunidad para la humanización</a></td>
+                        <td>José Luis Fernández</td>
+                        <td>11 de marzo de 2024</td>
+                        <td>★★★☆☆</td>    
+                    </tr>
+                    <tr>
+                        <td><a href="#a2">Así es la primera asistente de viajes de IA Generativa en Colombia</a></td>
+                        <td>Romulo di Roma</td>
+                        <td>10 de marzo de 2024</td>
+                        <td>★★★★★</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#a3">Es posible "ver" el código fuente de Matrix en nuestra realidad gracias a Apple Vision Pro. Nos dice mucho de su tecnología y futuro.</a></td>
+                        <td>Pedro Aznar</td>
+                        <td>9 de marzo de 2024</td>
+                        <td>★★★★☆</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#a4">GOOGLE PIXEL TABLET, LA NUEVA ALTERNATIVA QUE CONBINA GOOGLE NEST HUB CON UNA TABLETA</a></td>
+                        <td>Jose Galil</td>
+                        <td>8 de marzo de 2024</td>
+                        <td>★★★☆☆</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#a5">El puerto Thunderbolt es el nuevo dolor de cabeza para las computadoras con Windows y las Mac.</a></td>
+                        <td>Elias Villagran</td>
+                        <td>7 de marzo de 2024</td>
+                        <td>★★★★☆</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#a6">Cómo el desarrollo de nuevas habilidades laborales hace más productivas a las empresas</a></td>
+                        <td>Marco Aurelio</td>
+                        <td>7 de marzo de 2024</td>
+                        <td>★★★★☆</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#a7">Se acabó la espera, Xiaomi presenta el Poco F2 Pro.</a></td>
+                        <td>Elias Villagran</td>
+                        <td>6 de marzo de 2024</td>
+                        <td>★☆☆☆☆</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#a8">Netflix y WhatsApp comienzan a interactuar entre ellos en beneficio de los usuarios.</a></td>
+                        <td>Ernesto Perez</td>
+                        <td>5 de marzo de 2024</td>
+                        <td>★★★☆☆</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#a9">Descubren forma de sacar datos de una computadora a través de su fuente de poder.</a></td>
+                        <td>La victima</td>
+                        <td>5 de marzo de 2024</td>
+                        <td>★★★★★</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <article id="a1">
+                <h2>Inteligencia Artificial Generativa, reto y oportunidad para la humanización</h2>
+                <p>Fecha de Publicación: 11 de marzo de 2024</p>
+                <p>Autor: José Luis Fernández</p>
+                <img src="http://diarioresponsable.com/images-webp/articulos/full-380/inteligencia-artificial-regenerativao-opinion-dr-copy.webp" alt="" height="500px">
+                <p>El primer contacto que tuve con la Inteligencia Artificial Generativa constituyó una novedad, rayana en lo fascinante. Y no sólo para mí, puesto que quienes -entre asombrados e incrédulos- estábamos viviendo aquella primera experiencia no dudamos en calificarla de absolutamente disruptiva y decididamente prodigiosa.</p>
+                <p>Recuerdo perfectamente la fecha en que aquel Equipo de Trabajo de la asignatura Ethics, Business and Society en el Máster in Business Administration de ICADE nos sorprendía a todos -ellos mismos incluidos- con aquella puesta en escena portentosa, insólita, nunca hasta entonces vista, ni tan siquiera imaginada. Era el 21 de diciembre de 2022: entraba el invierno y con él, de la mano de unos alumnos innovadores y bien al cabo de la calle de los últimos avances en Inteligencia Artificial, hacía acto de presencia en nuestras vidas -para ya, probablemente, no abandonarnos nunca más- una flamante y extraordinaria nueva tecnología.</p>
+                <img src="https://media.istockphoto.com/id/1483013789/es/foto/ia-inteligencia-artificial-robot-y-manos-humanas-se-est%C3%A1n-tocando-y-conectando-unidad-con-el.webp?s=2048x2048&w=is&k=20&c=PptP6uetaegpxnjx0wVXGsIM1LTM833tbWVkalE11-I=" alt=""  height="500px">
+                <p>Desde entonces a hoy -repuesto ya de la sorpresa inicial, asimilada la novedad y habiendo tenido ocasión de compartir intuiciones e inquietudes al respecto con bastantes colegas en muy diversos foros-, he ido ubicando el fenómeno de la Inteligencia Artificial Generativa en unas coordenadas que, de una parte, me facilitan su comprensión y que, sobre todo, por otro lado me permiten otorgarle sentido y anticipar el alcance que podría estar llamada a tener, no sólo en el ámbito académico -actividad profesional en la que yo me ocupo-, sino también en el más amplio contexto de la vida personal y social en su conjunto.</p>
+                <img src="https://media.istockphoto.com/id/1471369286/es/foto/concepto-de-ciencia-de-inteligencia-artificial-una-persona-blanca-cauc%C3%A1sica-que-usa-una.jpg?s=612x612&w=0&k=20&c=9VZHS1lNkgXsGwglYIrE5_JWuE5Au88oe-1QjX1aMmU=" alt=""  height="500px">
+                <p>Pero, volviendo a aquella sesión, quiero insistir en que, tanto el que suscribe como el resto de la audiencia -de una parte, el resto de los alumnos y, de otra, tres de los cinco que estaban exponiendo el trabajo- estábamos tan sorprendidos que no sabíamos fijamente a qué carta quedarnos. El asombro subió de tono cuando en la pantalla grande se empezó a proyectar en vivo y sobre la marcha una poesía, redactada ex profeso en honor de una de las compañeras, al parecer, medio-novia de uno de los dos expositores que sí sabían de qué iba la cosa. Pues eran no más que dos, de entre los cinco del equipo, los que manejaban la batuta con solvencia. Y se las apañaron estupendamente a la hora de marcar el ritmo de la sesión, de manera que nos tuvieron a todos embelesados mientras -ellos mismos incluso, como después confesaron- no dejaban de estar inquietos e impacientes, esperando, como buenos pioneros, a ver si las cosas salían al final como ellos buscaban que saliera. No en vano era la primera vez que hacían uso de algo de lo que habían oído hablar pero que nunca habían utilizado.</p>
+                <img src="https://media.istockphoto.com/id/1515913422/es/foto/un-analista-de-datos-que-utiliza-la-tecnolog%C3%ADa-ai-para-trabajar-herramienta-para-el-an%C3%A1lisis.jpg?s=612x612&w=0&k=20&c=3tFm5Z27mRTMB5viy2xaMyeN9wIDSs4Li9VJI7ZF0lM=" alt=""  height="500px">
+                <p>Y, como no podría haber sido de otra manera, salió la cosa estupendamente, quedamos todos satisfechos y expectantes, emplazándonos para después de las Navidades, momento en el que habría que empezar a tomar en consideración las posibilidades que aquella performance académica podría estar en condiciones de ofrecernos cara al futuro. En principio, suponíamos que las posibilidades habrían de sustanciarse para bien. Pero, como toda cara tiene su cruz, cada haz tiene su envés y a todo Activo le corresponde siempre un Pasivo, había quienes se maliciaron pronto que no todo iba a ser tortas y pan pintáo. Sin tener necesariamente que suscribir un relato propio de los eternos agoreros y profetas de calamidades, sí que cabía anticipar riesgos, identificar peligros y empezar a descontar consecuencias no directamente buscadas pero que habrían de poder revelarse como potencialmente dañosas.</p>
+                <p>Y en efecto a principios de enero del año 2023 ya empezaron, si no los clarines del miedo sí cuando menos, el cornetín de órdenes que, vibrante y agudo, daba el toque de “atención general”; una llamada que resonó en el ámbito académico de todo el mundo. Se empezaban a buscar vendas para unas heridas aún no efectivas, pero con las que había que empezar a contar como posibilidades nada descabelladas. Recuerdo dos de las más obvias y socorridas: la primera, que, si ahora los alumnos iban a poder “subcontratar” al, por buen nombre, Copiloto los índices de los Trabajos de Fin de Grado. “¡Como que los índices!... ¡los trabajos enteros!”, apostillaban los más visionarios.</p>
+                <video src="/Video/chatgpt.mp4" controls width="50%"></video>
+                <p>En segundo lugar, que si con la nueva herramienta iba a resultar imposible discriminar entre lo que el estudiante había trabajado y lo que habría conseguido a partir del programa, toda vez que éste se caracteriza precisamente por ser generador de unos textos perfectamente estructurados y creíbles. ¿Qué validez cabría otorgar a partir de ahora al detector del plagio, llámese Turnitin o como quiera? Porque, si estos programas lo que hacen es calcular el índice de coincidencia de un texto, que se presenta como propio y original por parte del supuesto autor, con respecto a otros textos ya publicados y convenientemente almacenados en la Web, ahora el escenario iba a resultar muy otro, decían con buen tino quienes anticipaban escenarios más que probables y bien previsibles. “Con la nueva herramienta no hay texto previamente publicado, ni siquiera escrito todavía: la Inteligencia Generativa lo que hace, como su propio nombre indica, será generarlo en el preciso momento y hacerlo ex novo…” Y tenían razón quienes así argumentaban.  Con todo, tampoco les iban a la zaga quienes contraargumentaban, matizando, por lo demás, con excelente criterio: “¡Ojo a la expresión!” indicaban los que querían echar un capote que conjurara el peligro y quitara dramatismo a la cosa... “¡Lo generará ex novo, pero nunca habrá de hacerlo ex nihilo, ¿eh?!”</p>
+                <p>El matiz era muy importante y estaba sin duda muy bien traído. Porque una cosa es redactar un texto sobre la marcha, un párrafo nunca antes escrito -tal vez, en toda la historia de la humanidad-, como ocurre siempre, cuando la lengua cristaliza en habla, tal cual Ferdinand de Sausurre y Noam Chomsky nos enseñaron hace ya mucho tiempo. Y otra cosa bien distinta es que el texto en cuestión haya de entenderse como salido de la nada absoluta.</p>
+                <p>Ello, desde una consideración estrictamente lógica, habría de conceptuarse como un supuesto contradictorio y metafísicamente imposible; no pasando de ser una concreción más de lo que ocurre en términos generales con toda la historia de la humanidad y, apurando al extremo, con todo el devenir del universo en su conjunto. Naturalmente, siempre que, atentos al paradigma de la Física más solvente en el día de hoy, se exceptúe el hecho del Big-Bang y la correlativa hipótesis de la existencia de un Dios Creador, que habría tenido que haber puesto en marcha un cosmos que, antes, no tendría sino mera potencialidad, esto es: la posibilidad lógica de llegar a ser lo que está siendo… para, tras la expansión, acabar llegando a su punto final.</p>
+                <p>Sin tener por qué entrar en consideraciones más propias de la Cosmología que de la Teoría del Conocimiento, merece la pena abundar un tanto, insistiendo sobre el punto de cómo la Inteligencia Artificial Generativa se despliega -siempre y con absoluta necesidad- a partir de algo ya preexistente.</p>
+                <p>En su caso, esta especie de materia prima a partir de la que se construyen los nuevos textos viene constituida -como no podría ser de otra manera- por la realidad de los macro datos; es decir, de los millones de millones de datos producidos cada segundo en el mundo entero y almacenados en las redes de redes. Por lo demás, a costa de una contrapartida absolutamente insostenible, caeteris paribus; porque aquel almacenamiento resulta en exceso oneroso, en lo tocante a la energía que se necesita para ello y que en cada segundo se consume. De hecho, se genera un Footprint, una huella ecológica estratosférica, de la que, curiosamente, no se suele hablar demasiado, aunque en general a la gente le preocupa el medioambiente, la sostenibilidad y el asunto del “cambio del clima climático”: dicho sea esto último entre comillas, como guiño a la elocuencia de un ínclito ministro del Reino de España de hace ya algunos años.</p>
+                <img src="https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_960_720.jpg" alt="" height="500px">
+                <p>En todo caso -y a pesar del Pasivo que va dicho-, lo cierto es que aquellos datos almacenados e in crescendo por milésimas de segundo, se almacenan para algo, se archivan y registran con vista a la consecución de algún bien. Es a saber, para hacerlos hablar y extraer a partir de ellos patrones y tendencias que permitan anticipar y prever por dónde podrían ir desenvolviéndose las cosas en el futuro. Pues, en efecto, aquellos datos resultan susceptibles de ser analizados desde distintas metodologías y con diversas finalidades – la Analytics da frente a distintas avenidas, unas orientadas al Business y otras dirigidas a ámbitos de cualquier otra índole: social, médica, política, incluso electoral-. Por lo demás, aquellos datos están listos para recombinarse a una velocidad de computación vertiginosa, mediante sofisticados algoritmos, capaces, por sí mismos, de ir evolucionando y aprendiendo -Deep Learning- desde el punto en el que se disparan y entran en funcionamiento; y al paso que van operando.</p>
+                <p>Estas consideraciones, obvias e incuestionables como parecen ser, dan de por sí ya bastante que pensar. Con ello aportan solidez a las coordenadas epistemológicas y antropológicas desde las que enmarcar y hacerse cargo de algunas de las posibilidades que la Inteligencia Artificial Generativa pone a nuestro alcance en el ámbito académico y que nos habrá de retar a todos -profesores, alumnos, investigadores, gestores y los diversos entes reguladores- y estimularnos para sacarle el máximo partido posible y para ponerlo abiertamente a favor del Bien Común y de lo humano.</p>
+                <p>Este axioma ético merece ser mantenido en su doble carácter de postulado técnico y de principio moral. Y en ello andamos, tratando de transferir la propuesta, por todos los medios a nuestro alcance, a quien pueda acogerla con complacencia y la complicidad requerida para empeñarse en busca de la sinergia que cabe esperar de una bien trabada colaboración entre la Inteligencia Natural -humana, falible, inexacta, emocional, poética…- y la Inteligencia Artificial Generativa -producto humano, realidad objetiva al propio tiempo, y mecanismo capaz de producir, si se la guía convenientemente, cotas más altas de humanidad y de humanización.</p>
+                <a href="#tab">Regresar Arriba</a>
+            </article>
+            
+            <article id="a2">
+                <h2>Así es la primera asistente de viajes de IA Generativa en Colombia</h2>
+                <p>Fecha de Publicación: 10 de marzo de 2024</p>
+                <p>Autor: Romulo di Roma</p>
+                <img src="https://www.elespectador.com/resizer/Y8L1pVWZqYqv3rBBkEA-cYd2oAw=/920x613/filters:quality(60):format(jpeg)/www.elespectador.com/resizer/W8K3EyYDx8AN-UATYNq6le_gA9A=/arc-anglerfish-arc2-prod-elespectador/public/FY3PO7BT2RF4LG5QQ4Q3IQWX7I.jpg" alt="" height="500px">
+                <p>Un gran porcentaje de la comunidad viajera colombiana asegura que el próximo año recurrirá a la realidad virtual para inspirar sus elecciones de vacaciones.</p>
+                <p>Despegar se convierte en la primera empresa en lanzar un asistente de viajes que integra inteligencia artificial generativa con una interfaz visual incremental y adaptativa. “SOFIA” acompaña a los viajeros desde el momento que aparece la idea de emprender una nueva experiencia, pasando por la planificación y coordinación del viaje en sí mismo, hasta su regreso.</p>
+                <p>Con solo decir “quiero hacer surf”, se habilita la conversación con SOFIA. Es decir, la interacción con Despegar empieza buscando inspiración para el próximo viaje. El usuario puede hablar o intercambiar mensajes, pero también puede elegir opciones que SOFIA muestre desde un catálogo de destinos. Ya no es un chatBot, es una verdadera asistente de viajes digital, donde incluso el viajero puede prescindir del chat e interactuar solamente tocando elementos visuales o hablando. Además, igual que en una interacción humana, con SOFIA no hay que seguir un orden preestablecido de conversación, es una charla dinámica, un intercambio de ideas que concluye en recomendaciones concretas.</p>
+                <a href="#tab">Regresar Arriba</a>
+            </article>
+            
+            <article id="a3">
+                <h2>Es posible "ver" el código fuente de Matrix en nuestra realidad gracias a Apple Vision Pro. Nos dice mucho de su tecnología y futuro. </h2>
+                <p>Fecha de Publicación: 9 de marzo de 2024</p>
+                <p>Autor: Pedro Aznar</p>
+
+                <img src="https://i.blogs.es/3342bd/matrix-vision-pro-app-002/1024_682.webp" alt="avp" height="500px">
+                <p>Es probablemente un momento muy similar al que vivimos con la llegada del primer iPhone. Me refiero al lanzamiento de Apple Vision Pro (de momento, sólo en Estados Unidos), que está fomentando la aparición de nuevas aplicaciones que aprovechan las capacidades hardware del nuevo dispositivo de Apple.</p>
+                <p>Una de las más curiosas, y que más está dando que hablar, es Magic Room: se trata de una app nativa para visionOS que hace visible lo que se denomina el “Mesh Dynamics” del sensor LiDAR de Apple Vision Pro. Básicamente, es el “mapeo” de la realidad con una malla poligonal compuesta de miles de puntos muestreados por este tipo de sensor.</p>
+                <p>Esta malla poligonal es capaz de detectar la profundidad, posición y tamaño de cada elemento en tiempo real (ya que se producen cientos de miles es muestreos por segundo), permitiendo a visionOS saber dónde está cada elemento respecto al usuario.</p>
+                <p>Las GAFAS de REALIDAD AUMENTADA de APPLE se llaman VISION PRO y parecen CIENCIA FICCIÓN</p>
+                
+                <h3>La tecnología en Apple Vision Pro con LiDAR</h3>
+                <img src="https://i.blogs.es/4e283b/matrix-vision-pro-app-001/450_1000.webp" alt="">
+
+                <p>La tecnología LiDAR lleva en los iPhone desde los iPhone 12 Pro, y permite al dispositivo “conocer” cómo es la realidad para tomar decisiones respecto a la profundidad de campo, fotografías, aplicaciones de realidad mixta y otras decisiones que necesiten de un cálculo de distancias de este tipo. En los iPhone se usa sobre todo para mejorar las fotografías en condiciones con escasa iluminación, ya que este tipo de sensor no la necesita para funcionar.</p>
+                <p>El LiDAR es un sistema de teledetección activo. Es decir, emite unos pulsos de laser infrarrojos y mide el tiempo de retorno al sensor, por cada punto que mapea. Esto lo hace en tiempo real calculando unos 120.000 muestreos por segundo, por lo que podemos utilizar Apple Vision Pro desplazándonos por un entorno real y el sistema será capaz de detectar nuestro entorno y su volumentría.</p>
+                <p>LLo que hace Magic Room es precisamente “revelar esta magia”, tal como lo definen ellos. Al arrancar la aplicación, de repente esta malla de puntos conectados en forma de polígonos - tal y como la está reconociendo visionOS a través del LiDAR - se nos mostrará delante de nosotros.</p>
+
+                <img src="https://i.blogs.es/198ad1/matrix-vision-pro-app-007/450_1000.webp" alt="">
+
+                <p>(Imagen capturada en Apple Vision Pro) Arriba, derecha, foto de la terraza a la luz del día. En la captura, la interpretación a oscuras usando el LiDAR de Apple Vision Pro.</p>
+                <p>El ejemplo que veis en la imagen superior lo probé en la terraza de casa. La foto de referencia está tomada de día, pero la prueba con la app la hice de noche para que se apreciara que incluso sin luz, el LiDAR funciona perfecto - y es capaz de “trazar” la realidad con un detalle y rapidez asombroso.</p>
+                <p>No sólo es curioso - y espectacular, cuando lo pruebas con el visor de Apple - es también interesante comprobar la potencia del dispositivo para interpretar la realidad. En la aplicación, incluso se puede ajustar la velocidad de revelado y algún que otro truco especial.</p>
+
+                <img src="https://i.blogs.es/09b469/matrix-vision-pro-app-000/450_1000.webp" alt="">
+
+                <p>(Imagen capturada en Apple Vision Pro) La habitación con la lavadora se ve perfectamente a través de la pared, gracias al muestreo previo</p>
+                <p>Algo que sorprende la primera vez que se prueba, es que nos da la impresión que podemos “ver a través de las cosas”. Realmente no es así: Magic Room está mapeando constantemente la realidad, aunque no activemos la visualización de la malla. Si nos hemos movido por el entorno previamente, los datos de los puntos espaciales estarán almacenados.</p>
+                <p>En casa, por ejemplo, me ocurre con la habitación donde está la lavadora: es capaz de entender que está detrás de una pared con la información que ya tiene del muestreo previo y la muestra sobre el modelo de nuestro punto de vista. Esta interpretación de la malla poligonal causa casi engañarnos como si pudiéramos “ver a través de la pared”.</p>
+                <h3>Matrix en tu salón</h3>
+                <img src="https://i.blogs.es/402cf0/matrix-vision-pro-app-005/450_1000.webp" alt="">
+                <p>Uno de los usos más curiosos y espectaculares es activar la visualización “Digital Rain”, donde veremos como nuestra casa se convierte por arte de magia en una interpretación del código de Matrix, moviéndose y fluyendo alrededor nuestro. Mientras nos movemos por la estancia, se van revelando nuevas partes, en perfecto tiempo real y sin ningún tipo de latencia o de retardo.</p>
+
+                <img src="https://i.blogs.es/ced4a8/matrix-vision-pro-app-006/450_1000.webp" alt="">
+                <p>También se puede cambiar el tamaño de la letra del código que va fluyendo, cuyos cambios veremos aplicados al instante en la experiencia. Y tenemos la posibilidad de difuminar el entorno real o mezclarlo con la experiencia interactiva para dar una sensación aún más cinematográfica.</p>
+                <p>En las imágenes o en los vídeos que podáis ver, no se aprecia la sensación de tenerlo no sólo delante de ti, sino envolviéndote. Es una sensación inmersiva muy curiosa, que también transmite la capacidad de la tecnología en Apple Vision Pro, y que juegos como el genial Super Fruit Ninja ya utilizan para “mapear” la estancia y saber done tenemos los muebles de nuestro salón para que la fruta golpee, manche o resbale (por ejemplo) por el respaldo de nuestro sofá. El futuro de estas apps, más perfeccionadas, inmersivas y consistentes con la realidad que envuelve al usuario está a la vuelta de la esquina.</p>
+                <a href="#tab">Regresar Arriba</a>
+
+                
+
+
+            </article>
+            
+            <article id="a4">
+                <h2>GOOGLE PIXEL TABLET, LA NUEVA ALTERNATIVA QUE CONBINA GOOGLE NEST HUB CON UNA TABLETA</h2>
+                <p>Fecha de Publicación: 8 de marzo de 2024</p>
+                <p>Autor: Jose Galil</p>
+                <img src="https://tecnofanatico.com/wp-content/uploads/2023/07/IMG_4098-scaled.jpg" alt="" height="500px">
+                <p>Cuerpo de la Noticia: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et dolor vitae lectus
+                    venenatis euismod. Integer euismod mi non bibendum volutpat. Mauris sed risus vel urna consequat
+                    malesuada nec id turpis.</p>
+                    <p>Google ya tiene años en el mercado de tabletas, diez años atrás nos presentaron su Nexus 7 y Nexus 10 ambas de 7 y de 10 pulgadas respectivamente las cuales tuve la oportunidad de revisar, ambos dispositivos llegaban con un concepto nuevo y diferente el cual era una tableta con buenas especificaciones a un razonable precio, pero lamentablemente les fue difícil mantener este concepto y durante estos últimos años GOOGLE ha presentado algunas tabletas sin tener mucho éxito o acogida. </p>
+                    <p>En esta oportunidad nos presentan una alternativa diferente es una mezcla de tableta con Nest Hub gracias a su base de carga la cual trabaja también como parlante, la diferencia es que la Google Tablet puede trabajar independientemente fuera de la base como tableta convencional en donde podremos utilizarla para muchos fines ya sea de trabajo, entretenimiento y diversión, su diseño es prácticamente lo mismo que vemos en otras tabletas con material de aluminio en la parte posterior recubierta con una capa protectora la cual viene en tres colores, tenemos una cámara en la parte posterior, un sensor de huella dactilar en el botón de prendido y apagado que se encuentra en el lateral y 4 parlantes, OJO no hay entrada para auricular.</p>
+                    <p>La pantalla es de 10.95 pulgadas con tecnología IPS LCD con resolución 1600 x 2560 con 278ppi, no es la mejor pantalla en cuanto a tecnología que vamos a encontrar en el mercado, presenta colores balanceados sin saturación  típica de las pantallas IPS y corre a 60Hz de frecuencia de actualización,  podríamos decir que esta pantalla cumple su finalidad de proveer buena calidad de imagen y video aunque por las especificaciones la  considero una pantalla promedio.</p>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_694777-MCO72138687609_102023-O.webp" alt="">
+                    <p>Incluye la base o estación la cual uno puede adquirirla por separado por $130 dólares en caso deseen otra estación en algún lugar de tu casa u oficina, la base cuenta con un parlante el cual es más potente del que encontramos en la misma tableta, incluye unos pines en la parte frontal los cuales se conectan de manera magnetizada a la tableta para mantenerla en posición y de esta manera también poder cargarla. </p>
+                    <p>En cuanto a calidad de sonido no es el mejor parlante simplemente es un poco más potente que los parlantes de la tableta y le agrega un poco más de bajo, pero fuera de ello no hay nada especial en este aspecto </p>
+                    <p>El sistema operativo es Android 13 y una de las ventajas es que viene con algunas funciones que no vemos en los smartphones, como por ejemplo la barra inferior que nos permite interactuar con diferentes aplicaciones, de la misma manera se muestra en el área de la multitarea y permite poder escoger dos aplicaciones para poderla trabajar en simultaneo y lo mejor que trabaja muy bien. </p>
+                    <video src="/Video/niño.mp4" controls width="50%"></video>
+                    <p>Smart Hub es una alternativa que tenemos con la tableta una vez que la conectamos a la estación, una de las ventajas es cuando entramos a la aplicación Home podremos activar diferentes dispositivos inteligentes que tenemos en casa y controlarlos directamente desde la tableta o visualizar en tiempo real en caso por ejemplo tengan algunas cámaras instaladas o timbres. </p>
+                    <p>Un detalle que podremos ver es la optimización de aplicaciones, es un tema que Google va a tener que trabajar debido a que hay aplicaciones que podremos ver que no están optimizadas para trabajar en una pantalla de 10 pulgadas, como por ejemplo Instagram, Tiktok entre otras, esperemos que eso mejore con el tiempo, aunque Podremos tocar el lateral dos veces para que el contenido se mueva a la derecha o a la izquierda para mayor comodidad del usuario al momento de navegar, pero no es lo mismo. </p>
+                    <img src="https://static.independent.co.uk/2023/06/20/12/Google%20Pixel%20tablet.png" alt="" height="400px">
+                    <p>Cuenta con el procesador Tensor G2 de 5nm y 8Gb de memoria RAM con versiones de 128Gb o 256Gb de memoria interna, estas especificaciones son estándar, hablamos de que el procesador es el que se presentó el año pasado, sigue siendo un procesador potente por lo que podemos decir que vamos a poder utilizar cualquier tipo de aplicación sin ningún problema. OJO al no tener la capacidad de poder ampliar la memoria recomiendo adquirir la versión de 256GB.</p>
+                    <p>Las cámaras, tenemos dos sensores de 8 megapíxeles con apertura f/2.2 y la capacidad de poder grabar video 1080@30 cuadros por segundo, ambas cámaras se encuentran una en la parte frontal y la otra en la parte posterior, personalmente no soy de los usuarios que utiliza la cámara de una tableta para capturar imágenes, aunque podemos decir que los resultados son decentes, pero nada espectacular, y la grabación lamentablemente no es de las mejores debido a la falta de estabilización. </p>
+                    <p>En caso deseen utilizar la tableta para realizar video llamadas en este caso va a hacer su trabajo siempre y cuando cuentan con buena iluminación, no va a ser la mejor calidad, pero definitivo va a cumplir. </p>
+                    <p>La batería en este caso podríamos decir que es promedia nos da el día sin problema, aunque una de sus ventajas es la estación que nos permite dejar la tableta cuando no la estamos utilizando, permitiendo que se cargue.
+
+                    </p>
+                    <p>Ya para finalizar este video, considero que la Google Tablet es una tableta que llega al mercado a un valor por debajo de lo que encontramos en el mercado, dentro de sus especificaciones la considero una tableta entre gama media / media alta, la calidad de audio no es de las mejores aunque gracias a la estación podremos mejorar un poco el sonido, cumple dos funciones ya sea como tableta y Smarthub, su batería es promedio pero gracias a la estación nos permite ser más flexibles permitiendo cargar la tableta cuando la usamos en el modo Smarthub, gracias a su procesador podremos utilizar cualquier aplicación ya sea de juego, contenido media, navegación, redes sociales entre otras.  Si me preguntan recomiendas la tableta, mi respuesta es sí, sobre todo  en caso estén buscando una de gama media/ media alta y que se encuentre dentro del rango de los $499 dólares. </p>
+                
+                    <a href="#tab">Regresar Arriba</a>
+            </article>
+            
+            <article id="a5">
+                <h2>El puerto Thunderbolt es el nuevo dolor de cabeza para las computadoras con Windows y las Mac.</h2>
+                <p>Fecha de Publicación: 7 de marzo de 2024</p>
+                <p>Autor:  Elias Villagran</p>
+                <img src="https://tecnofanatico.com/wp-content/uploads/2020/05/Thunderbolt-logo-1-593x420.jpg" alt="">
+                <p>A estas alturas los puertos Thunderbolt se han convertido en un componente habitual de cualquier portátil, ya sea PC o Mac. Sus beneficios, velocidad y seguridad justificaban su integración en computadoras con el hardware más avanzado.</p>
+                <p>Pero resulta que en realidad estas entradas poseen un fallo grave y muy delicado, que permitiría hackear y robar la información de los discos duros en cuestión de minutos.</p>
+                <p>Un investigador de la Eindhoven University of Technology ha revelado que la existencia de algunas vulnerabilidades descubiertas en el estándar de conexión Thunderbolt podrían exponer la información de cualquier dispositivo con estos puertos.</p>
+                <p>El sujeto responsable de destapar el fallo, Björn Ruytenberg, afirma que, en teoría, con este error se podría obtener acceso a todos los datos en aproximadamente cinco minutos, incluso si la computadora portátil está bloqueada, protegida con contraseña y cuenta un disco duro encriptado. Y para demostrarlo subió este video:</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7uvSZA1F9os?si=FwlmcQB-VDltLqKa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>Como podemos observar el proceso es un poco complicado. Ya que requiere acceso físico a la portátil para desmontarla y conectarle una serie de componentes; mismos que enlaza a otra computadora que permite liberar los candados de seguridad desde el puerto Thunderbolt.</p>
+                <p>Todo esta intervención estaría basada en una falla de diseño de harware. Por lo que cualquier computadora con un puerto de este tipo fabricado de 2019 para atrás podría ser vulnerable.</p>
+                <p>En el video, rompe la seguridad de una portátil Lenovo ThinkPad protegida con contraseña. Pero en teoría este fallo también podría afectar a computadoras Mac parcialmente. Aunque Linux y Windows son las plataformas más vulnerables.</p>
+                <p>Deshabilitar el puerto Thunderbolt desde el BIOS sería la única solución actual a este fallo.</p>
+                <a href="#tab">Regresar Arriba</a>
+            </article>
+            
+            <article id="a6">
+                <h2>Cómo el desarrollo de nuevas habilidades laborales hace más productivas a las empresas</h2>
+                <p>Fecha de Publicación: 7 de marzo de 2024</p>
+                <p>Autor: Marco Aurelio</p>
+                <p>CSi los empleados obtienen nuevas aptitudes y competencias, no solo se abonará a su desarrollo personal y crecimiento laboral, sino que la empresa será más productivas y competentes para enfrentar nuevos retos.</p>
+                <img src="https://www.infobae.com/new-resizer/Dgmvcfajp2BUMRbYbkld1MsE4H8=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/EHC6EFIXUNFI5JCHQ65CU7RORA.jpg" alt="">
+                <p>Impulsar el desarrollo de nuevas habilidades en el lugar de trabajo es esencial para mantener la relevancia y competitividad en un entorno laboral en constante evolución. La capacitación y adquisición de nuevas habilidades no solo benefician a los empleados individualmente, sino que también fortalecen la capacidad general de la empresa para adaptarse a los cambios al mismo tiempo que se mantiene actualizada.</p>
+                <p>Actualmente existen diversas estrategias que pueden implementarse para fomentar un constante desarrollo de habilidades entre los equipos de trabajo, sin importar el rubro de la empresa en la que se está.</p>
+                <p>Desarrollar nuevas habilidades o nuevas capacitaciones sobre el área de trabajo no solo implica la formación técnica, sino también el desarrollo de habilidades blandas, como la comunicación efectiva, la resolución de conflictos y el liderazgo. Al proporcionar oportunidades regulares de aprendizaje, los empleados se mantienen actualizados en las últimas tendencias y tecnologías, mejorando así su capacidad para afrontar nuevos retos.</p>
+                <img src="https://www.infobae.com/new-resizer/EDT5SgHNoIAGPINRjzx2BDfjgvc=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/P3PCU7HRDJGWRL56P66O37T44I.jpg" alt="">
+                <p>Además, es crucial fomentar una cultura organizacional que valore y premie el aprendizaje continuo. Reconocer los esfuerzos y logros de aquellos que buscan mejorar sus habilidades no solo motiva al individuo, sino que también envía un mensaje claro sobre la importancia que la empresa otorga al desarrollo profesional. Esto puede llevarse a cabo a través de reconocimientos, ascensos, o incluso bonificaciones vinculadas a la adquisición de nuevas competencias.</p>
+                <h3>Cómo impulsar el desarrollo de actividades</h3>
+                <p>La estrategia más efectiva, y obvia para potenciar las nuevas habilidades, establecer un programa de formación continua que abarque diversas áreas relevantes para la empresa y sus empleados.</p>
+                <p>En la era digital actual, las herramientas tecnológicas juegan un papel fundamental en la capacitación y desarrollo de habilidades. La implementación de plataformas de aprendizaje en línea, cursos virtuales y simulaciones proporciona a los empleados flexibilidad en sus horarios y accesibilidad a una amplia gama de recursos educativos. Estas tecnologías no solo facilitan la adquisición de conocimientos, sino que también permiten un seguimiento más preciso del progreso individual de cada empleado.</p>
+                <img src="https://www.infobae.com/new-resizer/ypQEglagp2y7H-BAmEQ8qc3TU4Q=/768x512/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/V45LYSULX5BDXKDRVXWIM5JKT4.png" alt="">
+                <h3>Ventajas de Desarrollar Nuevas Habilidades</h3>
+                <p>Hasta ahora se ha demostrado que invertir tiempo y recursos en el desarrollo de habilidades para los trabajadores, haciendo que continúen con su aprendizaje a lo largo de la vida, tiene un impacto positivo tanto para la vida personal del trabajador, como para los resultados y productividad del empleador.</p>
+                <p>Una fuerza laboral capacitada para adquirir nuevas habilidades rápidamente es más adaptable a los cambios en el mercado y en la industria. La adaptabilidad es clave para la supervivencia y el crecimiento sostenible de cualquier organización.</p>
+                <p>Además, al mejorar las habilidades de los empleados, se aumenta la eficiencia y la calidad del trabajo. La productividad mejora a medida que los equipos están mejor equipados para abordar tareas y desafíos con mayor destreza y conocimiento.</p>
+                <p>También podemos nombrar las siguientes:</p>
+                <h3>Innovación</h3>
+                <p>El desarrollo de habilidades fomenta la creatividad y la innovación. Los empleados que poseen una amplia gama de habilidades pueden aportar perspectivas diversas y proponer soluciones innovadoras a los problemas, impulsando así el crecimiento y la competitividad de la empresa</p>
+                <img src="https://www.infobae.com/new-resizer/JQaOSP-tCKYu91n9OPqEweAmfek=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/UYACMR2IPFHHLIDTNZUCI5OQPI.jpg" alt="">
+                <h3>Retención de Talentos</h3>
+                <p>La inversión en el desarrollo de habilidades también contribuye a la retención de talentos. Los empleados valoran las oportunidades de crecimiento y aprendizaje, y una empresa que facilita estas oportunidades tiene más probabilidades de retener a su personal más valioso.</p>
+                <p>El desarrollo de habilidades en el lugar de trabajo es un aspecto crucial para el éxito a largo plazo de cualquier empresa. Al implementar estrategias efectivas, aprovechar la tecnología y reconocer las ventajas inherentes a este proceso, las organizaciones pueden cultivar equipos más competentes, adaptables e innovadores, lo que se traduce en un entorno laboral más sólido y resistente a los desafíos que pueda presentar el futuro.</p>
+                <a href="#tab">Regresar Arriba</a>
+            </article>
+            
+            <article id="a7">
+                <h2>Se acabó la espera, Xiaomi presenta el Poco F2 Pro.</h2>
+                <p>Fecha de Publicación: 6 de marzo de 2024</p>
+                <p>Autor: Elias Villagran</p>
+                <img src="https://tecnofanatico.com/wp-content/uploads/2020/05/1366_2000.jpg" alt="" height="500px">
+                <p>Los rumores en torno a lo que sería el Poco F2 Pro vienen hace varias semanas y dentro de todo lo que se hablaba lograba despuntar el que llevaría un buen hardware con un buen precio en la formula, algo que por estos días es incluso difícil de cumplir para Xiaomi que poco a poco las especificaciones altas las acerca más al rango de los USD $1.000 que al de los USD $500.</p>
+                <p>Especulaciones más, especulaciones menos, la verdad es que el Poco F2 Pro fue presentado y no solo cumplió con el apartado de llevar un hardware potente, una de las promesas que se aseguraban en la previa, sino que superó con creces el optimismo con que se hablaba de su bajo precio que terminó siendo menor al que esperaban muchos.</p>
+                <img src="https://tecnofanatico.com/wp-content/uploads/2020/05/1366_2000-2.jpg" alt="" height="400px">
+                <p>No les vamos a mentir, si bien es cierto es un producto nuevo, hay mucho del Redmi K30 Pro en su construcción, quizá con un hardware más actualizado y con puntos diferenciadores pero siguiendo los pasos de ese terminal que cayó tan bien en el continente asiático.</p>
+                <img src="https://tecnofanatico.com/wp-content/uploads/2020/05/1366_2000-1-1024x482.jpg" alt="" height="500px" width="500px">
+                <p>En cuanto a especificaciones podemos encontrarnos con un procesador Qualcomm Snapdragon 865 a 2,4 GHz con soporte para redes 5G, dato que ya se había filtrado en rumores previos a su presentación y que en realidad no sorprende si se trata de un dispositivo que viene de un continente donde el 5G avanza con rapidez y su aceptación global es cosa de tiempo. También lleva una pantalla AMOLED FHD+ de 6,67 pulgadas con soporte HDR10 y frecuencia de actualización de 60Hz. Cuenta con 6 GB de memoria RAM y 128 GB de almacenamiento interno (en su modelo base). Además de una batería de 4.700 mAh con soporte para carga rápida a 30W, lo que en tiempo de carga se traduce en 100% en solo 60 minutos.</p>
+                <img src="https://tecnofanatico.com/wp-content/uploads/2020/05/1366_2000-3-1024x570.jpg" alt="" height="400px">
+                <p>En lo que respecta a cámaras, un punto muy importante en esta generación de dispositivos, lleva 4 lentes en la parte posterior: un lente de 64MP, uno ultra wide de 13MP, un telefoto que igual funciona como macro de 5MP y un sensor de profundidad de 2MP, a lo que debemos sumar una cámara selfie de 20MP que aparece y desaparece desde el borde superior del teléfono.</p>
+                <img src="https://tecnofanatico.com/wp-content/uploads/2020/05/1366_2000-4-1024x669.jpg" alt="" height="400px">
+                <p>¿Precio?, me costó creerlo cuando leí el precio, pero efectivamente estamos frente a un terminal de gama alta que en su versión base cuesta solo USD $542, cuesta creerlo pero es cierto. En lo que respecta a disponibilidad, en China ya lo puedes encontrar por ese precio, pero creo que vamos a tener que esperar un poco por este lado del mundo para conocer de sus bondades, básicamente porque eso de comprar a tiendas chinas siempre fue algo tardado, y ahora lo es mucho más con esto del Covid-19 y muchos servicios de encomienda trabajando a media maquina, que si antes te demorabas un mes en recibir tu paquete, hoy fácil puede tardar 3 si consideras que la aduana de tu país también debe estar colapsad a y trabajando a poca capacidad.</p>
+                <a href="#tab">Regresar Arriba</a>
+            </article>
+            
+            <article id="a8">
+                <h2>Netflix y WhatsApp comienzan a interactuar entre ellos en beneficio de los usuarios.</h2>
+                <p>Fecha de Publicación: 5 de marzo de 2024</p>
+                <p>Autor: Ernesto Perez</p>
+                <img src="https://tecnofanatico.com/wp-content/uploads/2020/05/whatsapp-20image-202020-05-08-20at-2012-44-47.jpeg" alt="" height="500px">
+                <p>WhatsApp sigue sumando uniones a su interfaz. Tal cual lo hicieron en el pasado Facebook, Instagram y Youtube, ahora Netflix se podrá reproducir en la famosa plataforma de mensajería. El popular software de contenidos firmó una alianza con el gigante de las comunicaciones. De esta manera se permite que los usuarios disfruten del material de ambas aplicaciones al mismo tiempo.</p>
+                <p>Durante el último año WhatsApp normalizó una función muy común. El contenido audiovisual de Youtube e Instagram se puede reproducir simplemente compartiendo un enlace. Vamos a cualquiera de las aplicaciones mencionadas, copiamos el link y lo compartimos con cualquiera de nuestros contactos. El receptor no tiene la necesidad de ir a la app de origen. Solo debe presionar el video y allí puede visualizar el contenido.</p>
+                <p>Esta misma función ahora está disponible con Netflix. En la última actualización de la app de contenidos, entre las funciones «más» se visualiza la opción de compartir en WhatsApp. A quien queramos agregar a esta función debe tener una suscripción de Netflix. De lo contrario solo envía un link para unirse.</p>
+                <img src="https://tecnofanatico.com/wp-content/uploads/2020/05/whatsappnetflix2-8590b7b40b44fb8f36c1e8d562bbe309-0x1200.jpg" alt="" height="500px">
+                <p>Luego de presionar el ícono te aparecerán los contactos de tu WhatsApp. Lo mismo que en Youtube. En consecuencia eliges a la persona o grupo con quien quiere compartir y listo. A través del enlace se puede reproducir el contenido en WhatsApp y chatear al mismo tiempo. Además se puede jugar con el tamaño y ubicación de la pantalla. Obviamente debes tener ambas aplicaciones en tu teléfono celular.</p>
+                <img src="https://tecnofanatico.com/wp-content/uploads/2020/05/whatsappnetflix-b5e4120a57072b43578fc21538dce811-0x1200.jpg" alt="" height="500px">
+                <br><a href="#tab">Regresar Arriba</a>
+
+            </article>
+            
+            <article id="a9">
+                <h2>Descubren forma de sacar datos de una computadora a través de su fuente de poder.</h2>
+                <p>Fecha de Publicación: 5 de marzo de 2024</p>
+                <p>Autor: La victima</p>
+                <img src="https://tecnofanatico.com/wp-content/uploads/2020/05/3975-montar-fuente-alimentacion-1024x641.jpg" alt="" height="500px">
+                <p>Por lo general cuando se invoca la palabra “hacker” es para relacionarla con algún acto que involucra violar seguridad de algo y causar daños o robos de información, pero la verdad sea dicha, no debemos confundir a un hacker con un ciberdelincuente, porque el primero puede lograr cosas en base a su conocimiento sin causar daños, mientras que el segundo utiliza su conocimiento para robar información, causar estragos y últimamente incluso estafar a los usuarios de un dispositivo robándole datos y hasta secuestrándolos y cobrando por liberarlos.</p>
+                <p>En el lado de los hackers siempre se van realizando avances en distintos ámbitos y ahora surgió una idea que puede sonar loca, pero por lo visto la transformaron en algo real: lograron robar información de una computadora por medio de su fuente de alimentación.</p>
+                <p>Quienes lograron la hazaña pertenecen al Centro de Investigación de Seguridad Cibernética en la Universidad Ben-Gurion, Israel, los mismos que lograron crear un sistema que transmite silenciosamente datos de las frecuencias de ultrasonido emitidas por una fuente de alimentación de PC.</p>
+                <p>Antes de continuar debemos llamar a la tranquilidad, ya que el método utilizado hace imposible que cualquier persona lleve a cabo el robo de información tu equipo de menear simple, hay dificultades técnicas que hacen casi imposible que alguien pueda hacerlo sin que lo notes.</p>
+                <p>Acá el video publicado por los investigadores:</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VTTq-wBFu-o?si=MtvArEDyCglWGLdC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>«En la investigación publicada por los especialistas se relata que la fuente de alimentación se puede convertir en un altavoz para emitir sonidos no perceptibles para el oído humano, pero sí en dispositivos como móviles y sus micrófonos.</p>
+                <p>Esto es posible gracias a una vulnerabilidad conocida como Air-ViBeR, la cual, básicamente utiliza cambios en las vibraciones de los ventiladores de la PC para obtener datos. Junto a la ayuda de un smartphone, se puede alterar la velocidad de los ventiladores para convertir los ruidos de las vibraciones en unos y ceros; estos luego se transmiten en la pantalla.”</p>
+                <p>Condiciones como la cercanía del móvil infectado a menos de 5 metros de la computadora y la lentitud en la velocidad de transmisión son uno de los muchos obstáculos que se le van a presentar a quien intente utilizar este método, pero bajo condiciones técnicas optimas se pudo lograr lo que a simple vista suena imposible.</p>
+                <p>¿Porque es importante este tipo de descubrimientos por parte de especialistas en seguridad?, pues la respuesta es simple, al encontrar este tipo de vulnerabilidades se puede trabajar en mejorar el hardware futuro a nivel de seguridad, porque hasta antes de esto muy posiblemente ni un fabricante De Fuentes de poder se habría imaginado que alguien podía usar su producto como parte de un complejo sistema de robo de información.</p>
+                <a href="#tab">Regresar Arriba</a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Harold Medrano</p>
+    </footer>
+</body>
+
+</html>

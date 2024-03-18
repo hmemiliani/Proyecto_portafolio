@@ -1,0 +1,263 @@
+<!-- Parte 1: Crear un Blog
+
+Objetivo: Crear una página que funcione como la portada de un blog. Esta deberá incluir un título principal que represente el tema del blog, una breve descripción o mensaje de bienvenida, y un listado de artículos o entradas con su respectivo título, resumen e información de publicación.
+
+Criterios de aceptacion:
+
+- Encabezado del Blog:
+	* La página debe comenzar con un elemento destacado que actúe como el encabezado del blog, incluyendo el nombre del blog y, opcionalmente, un lema o frase que describa el enfoque o tema principal del blog. Este elemento debe ser lo suficientemente prominente para captar la atención inmediatamente.
+- Introducción o Bienvenida:
+	* Inmediatamente después del encabezado, debe incluirse un párrafo que sirva como introducción o mensaje de bienvenida al blog. Este texto debe ofrecer una visión general de lo que el blog trata y qué tipo de contenido pueden esperar los visitantes. Es importante que este mensaje sea claro y conciso para establecer correctamente las expectativas de los lectores.
+- Lista de Entradas o Artículos: 
+	* A continuación de la introducción, se debe presentar una lista de 6 entradas o artículos. Cada entrada debe estar claramente diferenciada y debe incluir:
+		- Título de la Entrada: Debe ser claro y atractivo, captando la esencia del contenido del artículo.
+		- Imagen principal: Debe estar relacionada al tema del articulo.
+		- Contenido de cada articulo o entrada: Un breve párrafo que adelante al lector de qué trata la entrada, incentivando la lectura completa.
+		- Fecha de Publicación: La inclusión de la fecha ayuda a contextualizar el contenido y permite a los lectores identificar las entradas más recientes.
+- Al menos dos articulo debe tratar sobre dos de los siguientes temas:
+	- Quien fue Dennis Ritchie.
+	- Quien fue Grace Hopper.
+	- Quien fue Tim Berners-lee.
+	- La importancia de la programacion web.
+
+Notas Adicionales
+	* Reflexionen sobre cómo las etiquetas básicas de HTML pueden utilizarse para estructurar los distintos tipos de contenido (títulos, párrafos, imagenes).
+	* Consideren la importancia de una organización clara para facilitar a los usuarios la navegación y el acceso al contenido deseado.
+	* Aunque la tarea no especifica el uso de etiquetas semánticas avanzadas, es crucial enfocarse en la usabilidad y accesibilidad del blog para quienes lo visitan.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style_blog.css">
+    <title>Blog</title>
+</head>
+
+<body>
+    <header>
+        <h1>Bits y Bytes: Explorando la Tecnología</h1>
+        <nav>
+            <ul>
+                <li><a href="portafolio.html">Inicio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="about_me.html">Sobre mi</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <p class="intro">"Bits y Bytes" es un blog dedicado a explorar los fundamentos y las figuras clave en el mundo de la tecnología. <br> Desde los pioneros de la programación hasta las últimas tendencias en desarrollo web, este blog ofrece una mirada profunda a cómo la tecnología ha transformado nuestras vidas.<br>     
+            Únete a nosotros en un viaje fascinante a través de los bits y bytes que dan forma a nuestro mundo tecnológico."</p>
+    </article>
+    
+    <article>
+        <table id="tab" border="1px" width="100%"> <!-- Tabla de contenido -->
+            <caption>
+                <h2>Tabla de contenido</h2>
+            </caption>
+            <thead>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Fecha</th>
+                    <th>Calificacion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#a1">El creador del lenguaje C, Dennis Ritchie</a></td>
+                    <td>11 de marzo de 2024</td>
+                    <td>★★★☆☆</td>    
+                </tr>
+                <tr>
+                    <td><a href="#a2">Quien fue Grace Murray Hopper</a></td>
+                    <td>9 de marzo de 2024</td>
+                    <td>★★★★★</td>
+                </tr>
+                <tr>
+                    <td><a href="#a3">Quien fue Tim Berners-lee.</a></td>
+                    <td>8 de marzo de 2024</td>
+                    <td>★★★★☆</td>
+                </tr>
+                <tr>
+                    <td><a href="#a4">La importancia de la programacion web.</a></td>
+                    <td>7 de marzo de 2024</td>
+                    <td>★★★☆☆</td>
+                </tr>
+                <tr>
+                    <td><a href="#a5">¿Qué es Python?</a></td>
+                    <td>6 de marzo de 2024</td>
+                    <td>★★★★☆</td>
+                </tr>
+                <tr>
+                    <td><a href="#a6">HTML: Lenguaje de etiquetas de hipertexto</a></td>
+                    <td>5 de marzo de 2024</td>
+                    <td>★★★★☆</td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+            
+            
+    <article id="a1">
+        <h3>El creador del lenguaje C, Dennis Ritchie</h3>
+        <img src="https://adicra.org.ar/wp-content/uploads/2019/09/09-09-NaceDennisRitchie-2020m.png" alt="Dennis Ritchie" height="500px">
+        <p>Dennis MacAlistair Ritchie (9 de septiembre de 1941 - 12 de octubre de 2011), Graduado de Física y
+            Matemáticas aplicadas de Harvard, fue un científico de la computación estadounidense.<br>
+
+            <br>Colaboró en el diseño y desarrollo de los sistemas operativos Multics y Unix, así como el desarrollo de
+            varios lenguajes de programación como el C, tema sobre el cual escribió un célebre clásico de las ciencias
+            de la computación junto a Brian Wilson Kernighan: El lenguaje de programación C.<br>
+
+            <br>Recibió el Premio Turing de 1983 por su desarrollo de la teoría de sistemas operativos genéricos y su
+            implementación en la forma del sistema Unix. En 1998 le fue concedida la Medalla Nacional de Tecnología de
+            los Estados Unidos de América. Se jubiló en 2007, siendo todavía entonces el jefe del departamento de
+            investigación en software de sistemas de Alcatel-Lucent.<br>
+        </p><br><a href="#tab">Regresar Arriba</a><br>
+        <p><i>Hace 2 horas.</i></p>
+    </article>
+    
+    <article id="a2">
+        <h3>Quien fue Grace Murray Hopper</h3>
+        <img src="https://d9v7j6n3.rocketcdn.me/wp-content/uploads/2020/08/grace-768x432.jpg.webp" alt="Grace hopper" height="500px">
+        <p>Grace Murray Hopper (Nueva York, 9 de diciembre de 1906-Condado de Arlington, 1 de enero de 1992) fue una
+            científica de la computación y militar estadounidense con grado de contraalmirante. Fue pionera en el mundo
+            de las ciencias de la computación y la primera programadora que utilizó el Mark I. Entre las décadas de los
+            50 y 60 desarrolló el primer compilador para un lenguaje de programación así como también propició métodos
+            de validación. <br>
+
+            <br>Popularizó la idea de los lenguajes de programación independientes de la máquina, lo que derivó en el
+            desarrollo de COBOL, un lenguaje de alto nivel de programación que aún se utiliza. Era conocida por sus
+            amistades como Amazing Grace. <br>
+        </p><br><a href="#tab">Regresar Arriba</a><br>
+        <p><i>Hace 2 dias.</i></p>
+    </article>
+    
+    <article id="a3">
+        <h3>Quien fue Tim Berners-lee.</h3>
+        <img src="https://i.blogs.es/78e59f/450_1000/1366_2000.jpeg" alt="tim berners" height="500px">
+        <p> Timothy "Tim" John Berners-Lee (Londres, Inglaterra; 8 de junio de 1955) es un científico de la computación
+            británico, conocido por ser el padre de la World Wide Web. Estableció la primera comunicación entre un
+            cliente y un servidor usando el protocolo HTTP en diciembre de 1990. En octubre de 1994 fundó el Consorcio
+            de la World Wide Web (W3C) con sede en el MIT, para supervisar y estandarizar el desarrollo de las
+            tecnologías sobre las que se fundamenta la Web y que permiten el funcionamiento de Internet. <br>
+
+            <br>Ante la necesidad de distribuir e intercambiar información acerca de sus investigaciones de una manera
+            más efectiva, Berners-Lee desarrolló las ideas fundamentales que estructuran la web. Él y su grupo crearon
+            lo que por sus siglas en inglés se denomina Lenguaje HTML (HyperText Markup Language) o lenguaje de
+            etiquetas de hipertexto, el protocolo HTTP (HyperText Transfer Protocol) y el sistema de localización de
+            objetos en la web URL (Uniform Resource Locator).<br>
+
+            <br>Es posible encontrar muchas de las ideas plasmadas por Berners-Lee en el proyecto Xanadú (que propuso
+            Ted Nelson) y el memex (de Vannevar Bush). <br>
+        </p><br><a href="#tab">Regresar Arriba</a><br>
+        <p><i>Hace 3 dias.</i></p>
+    </article>
+    
+    <article id="a4">
+        <h3>La importancia de la programacion web.</h3>
+        <img src="https://nerade.com/media/pages/blog/programacion-web-a-medida/2022067010-1696617130/servicios-de-programacion-web-a-medida-1032x.jpg" alt="Dessarrollo web" height="500px">
+        <p>La tecnología de desarrollo web es cada vez más robusta. Anteriormente las páginas y aplicaciones eran
+            monolíticas, es decir, todo estaba construido en un solo paquete y era un desarrollador quien lo creaba. La
+            página web se construía completa en el backend o servidor y se enviaba al frontend o navegador para
+            presentarse. <br>
+
+            <br>Cada día que pasa, la web crece más y más, y que como usuarios estamos dependiendo constantemente del
+            desarrollo web. Algo que me queda muy claro, es que la web es una de las tecnologías más revolucionarias en
+            el mundo en los últimos años ya que ha tenido un gran impacto en la sociedad, tal es el caso que cuando
+            mucho la mitad de la población mundial está conectada a la web a través de Internet.<br>
+
+            <br>En la actualidad la interacción entre las personas y las aplicaciones web es cada vez mayor, hoy en día
+            no solo consultamos sitios web con la intención de ver o leer cierta información, sino que existen infinidad
+            de herramientas que nos ayudan a resolver diferentes problemas, en la actualidad existen aplicaciones o
+            sistemas enormes y robustos que corren a través de un navegador. La computación en la nube se ha ido
+            maximizando exponencialmente y ahora podemos realizar infinidad de cosas a través de un navegador web, por
+            ejemplo trabajar todo tipo de documentos de oficina, utilizar diferentes herramientas que ayudan a la
+            gestión de una empresa, tener videoconferencias, jugar en 3D, comprar en línea, incluso usar aplicaciones de
+            diseño gráfico. No hay duda, existen aplicaciones de todo tipo.<br>
+
+            <br>Por todo esto, la tecnología de desarrollo web es cada vez más robusta. Anteriormente las páginas y
+            aplicaciones eran monolíticas, es decir, todo estaba construido en un solo paquete y era un desarrollador
+            quien lo creaba. La página web se construía completa en el backend o servidor y se enviaba al frontend o
+            navegador para presentarse. Con esto cada vez que se requería cierta información, el navegador realizaba una
+            petición al servidor y se reconstruía la página completa lo cual recargaba todo el navegador y esto era muy
+            lento.<br>
+
+            <br>Hoy todo es diferente y en eso ambos estamos de acuerdo, porque en la actualidad el backend y frontend
+            son mundos completamente separados y ambos sumamente robustos, que se comunican entre sí de manera asíncrona
+            por medio de APIs REST o websockets, los Frameworks de javascript modernos impulsan la creación de
+            aplicaciones de una sola página (SPA) las cuales nunca recargan el navegador sino que solo la información
+            que se requiere, por lo que son mucho más rápidas y se le brinda al usuario una experiencia más fluida como
+            las aplicaciones de escritorio. Todo esto también nos permite tener sistemas más escalables ya que toda la
+            lógica y programación del backend puede ser reutilizada para otras interfaces o aplicaciones. Por todo esto,
+            ahora existen desarrolladores especializados en programar todo lo que pasa en el servidor y desarrolladores
+            especializados en programar todo lo que pasa del lado del cliente o navegador.<br>
+
+            <br>Sin duda, la tecnología avanza constante y apresuradamente por lo que los desarrolladores web necesitan
+            estar a la vanguardia y en constante aprendizaje a las nuevas tecnologías y tendencias para que nosotros
+            como usuarios podamos apoyarnos de esta tecnología y hacer nuestro día a día mucho más fácil y
+            productivo.<br>
+        </p><br><a href="#tab">Regresar Arriba</a><br>
+        <p><i>Marzo 7.</i></p>
+    </article>
+    
+    <article id="a5">
+        <h3>¿Qué es Python?</h3>
+        <img src="https://blog.vermiip.es/wp-content/uploads/2023/10/Python-Symbol_0.png" alt="python" height="500px">
+        <p>
+            Python es un lenguaje de programación ampliamente utilizado en las aplicaciones web, el desarrollo de
+            software, la ciencia de datos y el machine learning (ML). Los desarrolladores utilizan Python porque es
+            eficiente y fácil de aprender, además de que se puede ejecutar en muchas plataformas diferentes. El software
+            Python se puede descargar gratis, se integra bien a todos los tipos de sistemas y aumenta la velocidad del
+            desarrollo.
+        </p>
+        <h4>¿Qué beneficios ofrece Python?</h4>
+        <p>Los beneficios de Python incluyen los siguientes:</p>
+        <ul>
+            <li>Los desarrolladores pueden leer y comprender fácilmente los programas de Python debido a su sintaxis
+                básica similar a la del inglés. <br><br></li>
+            <li>Python permite que los desarrolladores sean más productivos, ya que pueden escribir un programa de
+                Python con menos líneas de código en comparación con muchos otros lenguajes.<br><br></li>
+            <li>Python cuenta con una gran biblioteca estándar que contiene códigos reutilizables para casi cualquier
+                tarea. De esta manera, los desarrolladores no tienen que escribir el código desde cero.<br><br></li>
+            <li>Los desarrolladores pueden utilizar Python fácilmente con otros lenguajes de programación conocidos,
+                como Java, C y C++.<br><br></li>
+            <li>La comunidad activa de Python incluye millones de desarrolladores alrededor del mundo que prestan su
+                apoyo. Si se presenta un problema, puede obtener soporte rápido de la comunidad.<br><br></li>
+            <li>Hay muchos recursos útiles disponibles en Internet si desea aprender Python. Por ejemplo, puede
+                encontrar con facilidad videos, tutoriales, documentación y guías para desarrolladores.<br><br></li>
+            <li>Python se puede trasladar a través de diferentes sistemas operativos de computadora, como Windows, macOS, Linux y Unix.<br><br></li>
+        </ul>
+        <p>para mas informacion
+        <a href="https://aws.amazon.com/es/what-is/python/"> da click aqui.</a></p>
+        <br><a href="#tab">Regresar Arriba</a><br>
+        <p><i>Marzo 6.</i></p>
+    </article>
+    
+    <article id="a6">
+        <h3>HTML: Lenguaje de etiquetas de hipertexto</h3>
+
+        <img src="https://www.mundodeportivo.com/urbantecno/hero/2023/03/estos-son-los-mejores-cursos-de-html-online.jpg?width=1200&aspect_ratio=16:9" alt="html_logo" height="500px">
+
+        <p>HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente más básico de la Web. Define el significado y la estructura del contenido web. Además de HTML, generalmente se utilizan otras tecnologías para describir la apariencia/presentación de una página web (CSS) o la funcionalidad/comportamiento (JavaScript).</p>
+
+        <p>"Hipertexto" hace referencia a los enlaces que conectan páginas web entre sí, ya sea dentro de un único sitio web o entre sitios web. Los enlaces son un aspecto fundamental de la Web. Al subir contenido a Internet y vincularlo a las páginas creadas por otras personas, te conviertes en un participante activo en la «World Wide Web» (Red Informática Mundial).</p>
+
+        <p>HTML utiliza "marcas" para etiquetar texto, imágenes y otro contenido para mostrarlo en un navegador Web. Las marcas HTML incluyen "elementos" especiales como head>, < title>, < body>, < header>, < footer>, < article>, < section>, < p>, < div>, < span>, < img>, < aside>, < audio>, < canvas>, < datalist>, < details>, < embed>, < nav>, < output> (en-US), < progress>, < video>, < ul>, < ol>, < li> y muchos otros.</p>
+
+        <p>Un elemento HTML se distingue de otro texto en un documento mediante "etiquetas", que consisten en el nombre del elemento rodeado por "<" y ">". El nombre de un elemento dentro de una etiqueta no distingue entre mayúsculas y minúsculas. Es decir, se puede escribir en mayúsculas, minúsculas o una mezcla. Por ejemplo, la etiqueta < title> se puede escribir como < Title>, < TITLE> o de cualquier otra forma.</p>
+        <br><a href="#tab">Regresar Arriba</a><br>
+        <p><i>Marzo 5.</i></p>
+
+    </article>
+
+    <footer>
+        <p>&copy; 2024 Harold Medrano</p>
+    </footer>
+
+</body>
+
+</html>

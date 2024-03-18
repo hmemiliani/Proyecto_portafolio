@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Kay+Pho+Du:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;1,400;1,500&family=Ubuntu:wght@300;400;500;700&display=swap');
+/* Estilos generales */
+body {
+    font-family: "Kay Pho Du", serif;
+    font-style: normal;
+    font-size: 20px;
+    margin: 0; 
+    padding: 0; 
+    background-color: #f0f0f0;
+
+    color: #333;
+    
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; 
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #444343;
+}
+
+.intro {
+    text-align: center;
+    font-size: 18px;
+    
+}
+/* tabla de contenido */
+table {
+    margin: 0 auto;
+    border-collapse: collapse; /* lineas del borde de la tabla */
+    width: 80%; /* tamano de la tabla, visualmente */
+    
+}
+
+table caption { /* titulo de la tabla */
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+table th,
+table td { /* Formato de la tabnla */
+    padding: 10px;
+    text-align: center;
+}
+
+table th {/* titulo de la tabla */
+    background-color: #333;
+    color: #fff;
+}
+
+table tr:hover { /* para que cuando pase el mouse encima se ponga oscuro*/
+    background-color: #ddd;
+}
+
+/* Main */
+main {
+    padding: 20px;
+}
+
+article {
+    background-color: white;
+    margin: 20px auto; /*centrar */
+    padding: 20px;
+    width: 80%; /*ancho de la plataforma */
+    border-radius: 10px; /*bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /*sombreado */
+    
+}
+
+article img {
+    max-width: 100%; /*imagenes ajustadas */
+    height: auto; /*altura automatica */
+    margin-bottom: 20px;
+    max-height: 300px;
+}
+
+
+/* footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center; 
+    padding: 20px; 
+}
+
