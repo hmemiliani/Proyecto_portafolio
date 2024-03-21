@@ -33,9 +33,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    /*para que sea horizontal */
     margin-right: 20px;
-    /*espaciado entre palabras*/
 }
 
 nav ul li a {
@@ -114,5 +112,55 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: auto;
-    /*pego el footer al findo */
 }
+
+/* Para pantallas de tablet */
+@media only screen and (max-width: 768px) {
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid de 3 columnas */
+        grid-auto-rows: auto;
+        /* Altura */
+        grid-gap: 30px;
+        justify-items: center;
+        /*centrar los items horizontalmente */
+    }
+  }
+  
+  /* Para dispositivos móviles (celulares) */
+  @media only screen and (max-width: 480px) {
+    .projects {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    .project{
+        width: 300px;
+    }
+    main, footer, header {
+        min-width: 400px;
+        width: 400px;
+        padding: 01;
+        
+    }
+    .intro{
+        width: 350px;
+        padding: 20px;
+    }
+    header{
+        padding-left: 0;
+    }
+    main{
+        padding: 0;
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 370px;
+        align-items: center;
+
+    }
+  }
