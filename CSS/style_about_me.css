@@ -73,3 +73,39 @@ footer {
     padding: 20px;
 }
 
+/* Para pantallas de tablet */
+@media only screen and (max-width: 768px) {
+    article{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 550px;
+        align-items: center;
+        padding: 10;
+    }
+    article img{
+        padding: 0;
+    }
+
+  }
+  
+  /* Para dispositivos móviles (celulares) */
+  @media only screen and (max-width: 480px) {
+    article{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 350px;
+        align-items: first baseline;
+        padding: 0;
+    }
+    article img{
+        padding: 0;
+    }
+    article p{
+        width: 300px;
+    }
+    article h3, article li{
+        width: 250px;
+    }
+  }
